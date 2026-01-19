@@ -1,5 +1,5 @@
 # Weekly Challenge 01: LaTeX practice and Introduction to Logic
-# CS/MATH 113 Discrete Mathematics, Spring 2025
+# CS/MATH 113 Discrete Mathematics, Spring 2026
 ***
 
 # Purpose
