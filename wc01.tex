@@ -33,6 +33,16 @@
 \titledquestion{Everythings on the table} Draw the truth table of the implication operator.
 \begin{solution}
     % Add your solution here
+    \[
+\begin{array}{c|c|c}
+p & q & p \rightarrow q \\ \hline
+T & T & T \\
+T & F & F \\
+F & T & T \\
+F & F & T
+\end{array}
+\]
+
 \end{solution}
 
 
@@ -40,6 +50,7 @@
 Formally state a mathematical theorem that you like. Also briefly talk about why you chose this theorem and what you like about this theorem.
 \begin{solution}
     % Add your solution here
+    the pythagoras theorem is my favorite theorem because it displays a connection between algebra and geometry.it is widely used in real life contruction applications and it is relatively easy to understand. 
 \end{solution}
 
 
@@ -56,6 +67,51 @@ Formally state a mathematical theorem that you like. Also briefly talk about why
 
     \begin{solution}
     % Add your solution here
+    Dr.\ Crusher can split the apples into two groups: group A with 2 apples and
+group B with 3 apples. Dr.\ Crusher performs a scan on group A.
+
+If the scan identifies a faulty apple, then the faulty apple must be in group A.
+Since only two apples remain, a second scan on one of the two apples will identify
+whether that apple is faulty or the other one is.
+
+If group A does not contain a faulty apple, then group B must contain the faulty apple.
+Dr.\ Crusher then divides group B into two smaller groups, group C with two apples
+and group D with one apple. A second scan is performed on group C.
+
+If the scan identifies a faulty apple in group C, group D is discarded. A third scan
+on one of the two apples in group C will identify the faulty apple. If the scanned apple
+is not faulty, then the other apple must be faulty.
+
+If group C does not contain a faulty apple, then the single apple in group D must
+be the faulty one.
+
+In general, Dr.\ Crusher continues dividing the group of apples into two smaller groups
+and discards the group that does not contain a faulty apple. After the first scan, she is
+left with $\frac{n}{2}$ apples, after the second scan $\frac{n}{4}$ apples, and so on.
+After $x$ scans, the number of remaining apples is
+\[
+\frac{n}{2^x}.
+\]
+
+To guarantee that only one apple remains, we require
+\[
+\frac{n}{2^x} \le 1.
+\]
+This implies
+\[
+2^x \ge n,
+\]
+and therefore
+\[
+x \ge \log_2 n.
+\]
+
+Since the number of scans must be an integer, the minimum number of scans required
+to identify the faulty apple is
+\[
+\lceil \log_2 n \rceil.
+\]
+
     \end{solution}
 
 
